@@ -1,1 +1,3 @@
 # Desenvolvimento
+
+Exercícios Propostos desenvolvídos.
