@@ -1,0 +1,79 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<!-- BIBLIOTECA DE FUNÇÕES DEFINIDAS EM JAVASCRIPT -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Biblioteca para utilização de ícones -->
+<!-- https://fontawesome.com/v4.7.0/icons/  Lista de ícones -->
+<link href="font-awesome-4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+
+<!-- CHAMADA DOS ESTILOS CSS bootstrap e estilo próprio -->
+<link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.css">
+<link rel="stylesheet" href="css/estilo.css">
+
+
+
+<!-- DEFINIÇÃO DO ÍCONE E TÍTULO DA ABA DO NAVEGADOR -->
+<link rel="shortcut icon" type="imagens/png" href="img/favicon.png" />
+<title>CRM Nathan</title>
+
+<!-- Identificação do autor da página, pode ser a empresa também -->
+<meta name="author" content="Nome do autor">
+
+<!-- Uma breve descrição do seu site para os buscadores encontrarem seu site -->
+<meta name="description"
+	content="Definição de um template para construção de um sistema qualquer">
+
+<!-- Palavras chave que definem o seu sistema. É comum utilizar até 5 palavras -->
+<meta name="keywords" content="sites, web, meta tag, código, html">
+</head>
+
+<body>
+	<div class="container">
+
+		<div id="menu">
+			<nav class="nav nav-pills nav-fill">
+				<a class="nav-item nav-link " href="index.html"><i
+					class="fa fa-home"></i> Principal</a> <a
+					class="nav-item nav-link active" href="contatos.html">Contato</a> <a
+					class="nav-item nav-link" href="sobre.html">Sobre</a>
+			</nav>
+		</div>
+	</div>
+	
+<!-- 	Aqui criamos um formulário para coletar os dados do contato -->
+
+	<div class="container-fluid" id="conteudo">
+
+		<div class="formulario">
+			<form action="/novoc" method="get">
+				<h4>
+					<i class="fa fa-user"></i> Contato Com a Empresa
+				</h4>
+				<label>Nome</label> <input type="text" class="form-control"
+					id="nome" name="nome">
+				<hr>
+
+				<label>e-mail</label> <input type="text"
+					class="form-control mascaraCpf" id="email" name="email">
+				<hr>
+
+				<label>Telefone</label> <input type="text" class="form-control"
+					id="telefone" name="telefone">
+				<hr>
+
+				<label>Observação</label>
+				<textarea rows="5" cols="33" type="text" class="form-control"
+					id="obs" name="obs"></textarea>
+				<hr>
+
+				<input class="btn btn-success" type="submit" value="Enviar">
+			</form>
+		</div>		
+	</form>
+</body>
+</html>
